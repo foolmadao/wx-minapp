@@ -1,0 +1,12 @@
+<!--inside/inside.wxml-->
+<!-- <text>inside/inside.wxml</text> -->
+
+<view class="container">
+    <view class="picbox">
+        <image class="pic" src= "/image/burning.jpg" />
+        <text class='text'>世界上只有两种C，一种是徐志雷，另外一种不是徐志雷</text>
+    </view>
+    <view class="name">
+        <text >--ChuaN</text>
+    </view>
+</view>

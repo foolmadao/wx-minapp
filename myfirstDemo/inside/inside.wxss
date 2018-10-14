@@ -1,0 +1,24 @@
+/* inside/inside.wxss */
+.picbox{
+    display: flex;
+    flex-direction: column;
+    padding: 0 25rpx;
+
+}
+
+.pic{
+    width: 700rpx;
+    height: 900rpx;
+
+}
+
+.text{
+    width: 20em;
+    font-size: 36rpx;
+    letter-spacing: 4rpx;
+    line-height: 42rpx
+}
+.name{
+    margin-top: 20rpx;
+    text-align: right;
+}

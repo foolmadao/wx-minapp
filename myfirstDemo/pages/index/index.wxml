@@ -1,0 +1,9 @@
+<!-- div => view 容器组件
+img =》image 图片组件
+span =》 text 文字组件 -->
+<view class = "container">
+    <image class="headpic" src = '/image/burning.jpg' />
+    <text class='name' space="nbsp" >欢     迎     使     用</text>
+    <text class='des' bind:tap="nextpage" >ruaruarua</text>
+    
+</view>
