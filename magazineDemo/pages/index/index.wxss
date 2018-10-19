@@ -1,0 +1,127 @@
+/* pages/index/index.wxss */
+
+.recommend-container{
+    padding: 0 40rpx;
+}
+.recommend-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date{
+    position: relative;
+    font-size: 52rpx;
+    letter-spacing: 10rpx;
+    padding-bottom: 26rpx;
+    margin-top: 20rpx;
+}
+
+.date::after{
+    position: absolute;
+    left: 62rpx;
+    display: block;
+    content: " ";
+    width: 120rpx;
+    height: 4rpx;
+    background-color: #999;
+    bottom: 0;
+}
+.recommend-title{
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 56rpx;
+    margin-top: 20rpx;
+}
+
+.recommend-cover{
+    width: 700rpx;
+}
+
+.recommend-box text{
+    display: inline-block;
+    border: 1px solid #000;
+    padding: 10rpx 20rpx;
+    font-size: 28rpx;
+    margin: 20rpx 20rpx 20rpx 0;
+}
+.recommend-box text:first-of-type{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* 文章列表样式 */
+
+.recommend-list-container{
+    background-color: #ebebeb;
+    padding: 35rpx;
+    padding-bottom: 0;
+}
+.per-article{
+    background-color: #fff;
+    padding-bottom: 30rpx;
+    margin-bottom: 40rpx;
+}
+.per-article:last-of-type{
+    margin-bottom: 0;
+}
+.article-head{
+    padding: 20rpx;
+}
+.article-head image{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.article-head text{
+    font-size: 28rpx;
+    color: #666;
+}
+
+.article-cover image{
+    width: 100%;
+}
+.article-title{
+    font-size: 40rpx;
+    margin: 30rpx;
+    font-weight: 600;
+
+}
+.article-handle-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30rpx;
+}
+.article-type{
+    display: flex;
+}
+.article-type text{
+    border: 1px solid #000;
+    padding: 10rpx 20rpx;
+}
+.article-handle{
+    display: flex;
+}
+.article-handle image{
+    width: 60rpx;
+    height: 60rpx;
+    margin-left: 20rpx;
+}
+
+.article-handle view button{
+    position: relative;
+    bottom: 8rpx;
+    left: 4rpx;
+    width: 60rpx;
+    height: 60rpx;
+    background-color:transparent;
+    padding: 0;
+}
+.article-handle view button image{
+    margin-left: 0;
+}
+.article-handle button::after{
+    border: none;
+}

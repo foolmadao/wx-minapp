@@ -1,0 +1,57 @@
+<!--pages/type/type.wxml-->
+<!-- <text>pages/type/type.wxml</text> -->
+<view class="container">
+    <view class="img-box">
+        <image src="{{commendImage}}" />
+    </view>
+    <view class="head-container">
+        <view class="head-title">
+            <text >{{title}}</text>
+        </view>
+        <view class="head-icon">
+            <button open-type="share" >
+                <image src="/image/list/article/icon/Icon_relay.png" />
+            </button>
+            <image bind:tap="onmoreTap" data-articleType = '{{title}}'  src="/image/list/article/icon/Icon_more.png"  />
+        </view>
+    </view>
+</view>
+
+<view class="commend-list-container" >
+    <view class="per-article" wx:for="{{articleList}}"wx:key="id" >
+        <view class="article-head" >
+            <image src="{{item.markPeopleAvatar}}"  />
+            <text>{{item.markPeople}}</text>
+            <text>等</text>
+            <text>{{item.markCount}}</text>
+            <text>人mark了</text>
+        </view>
+        <view class="article-cover" >
+            <image mode="widthFix" src="{{item.articleImgSrc}}"  />
+        </view>
+        <view class="article-title" >
+            <text >{{item.articleTitle}}</text>
+        </view>
+        <view class="article-handle-box" >
+            <view class="article-type" >
+                <text >{{item.publishTime}}</text>
+            </view>
+            <view class="article-handle" >
+                <view >
+                    <image bind:tap="onmoreTap" data-articleType = '{{title}}' src="/image/list/article/icon/Icon_more.png"  />
+                </view>
+                <view >
+                    <button open-type="share" >
+                        <image src="/image/list/article/icon/Icon_relay.png" />
+                    </button>
+                    
+                </view>
+                <view >
+                    <image wx:if="{{typelikeArr[index]}}" data-likeIndex = '{{index}}' bind:tap="like" src="/image/list/article/icon/Icon_circle.png"/>
+                    <image wx:if="{{!typelikeArr[index]}}" data-likeIndex = '{{index}}' bind:tap="like" src="/image/list/article/icon/Icon_circle_fill.png"/>
+                </view>
+            </view>
+        </view>
+        
+    </view>
+</view>
