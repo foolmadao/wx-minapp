@@ -1,0 +1,119 @@
+/* pages/movie-detail/movie-detail.wxss */
+@import '/pages/movie-rating/movie-rating.wxss';
+.content-wrapper{
+  width: 100%;
+  background-color: #fff;
+}
+.poster-wrapper{
+  width: 100%;
+  height: 500rpx;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.poster-wrapper .poster{
+  height: 400rpx;
+  width: 300rpx;
+}
+.head-wrapper{
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  padding: 30rpx 20rpx;
+  flex-direction: row;
+  justify-content: space-between
+}
+.head-wrapper .head-info{
+  display: flex;
+  flex-direction: column;
+}
+.head-wrapper .head-info .title{
+  font-size: 50rpx;
+  font-weight: 700;
+  color: #000;
+}
+.head-wrapper .head-info .type,
+.origin-name,
+.date,
+.country{
+  font-size: 28rpx;
+  color: #bbb;
+}
+.head-rating{
+  margin-right: 40rpx;
+  border: 1rpx solid #777;
+  padding: 10rpx;
+  height: 140rpx;
+  width: 180rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rating-star{
+  margin-left: 25rpx;
+}
+.rating-average{
+  display: none;
+}
+.rating-aver{
+  font-size: 50rpx;
+  font-weight: 500;
+}
+.choose-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 30rpx 90rpx;
+  justify-content: space-between;
+}
+.choose-wrapper .wanna,
+.already{
+  border: 1rpx solid orange;
+  padding: 10rpx 70rpx;
+  color: orange;
+}
+.des-wrapper{
+  width: 100%;
+  padding: 30rpx 40rpx;
+  box-sizing: border-box;
+}
+.des-wrapper .des-title{
+  display: block;
+  color: #bbb;
+}
+.des-wrapper .des-content{
+  display: bolck;
+  font-size: 25rpx;
+  text-indent: 50rpx;
+  color: #000;
+}
+.actor-scroll{
+  white-space: nowrap;
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.actor-photo-wrapper{
+  width: 100%;
+}
+.actor-grid{
+  display: inline-block;
+  width: 200rpx;
+  height: 360rpx;
+  margin: 0 15rpx;
+  text-align: center;
+}
+.actor-grid image{
+  display: block;
+  width: 200rpx;
+  height: 320rpx;
+}
+.actor-title{
+  display: block;
+  color: #bbb;
+  margin-left: 40rpx;
+}

@@ -1,0 +1,50 @@
+<!--pages/movie-detail/movie-detail.wxml-->
+<!-- <text>pages/movie-detail/movie-detail.wxml</text> -->
+<import src='/pages/movie-rating/movie-rating.wxml' />
+<view class='poster-wrapper'>
+  <image class='poster' src='{{movieInfo.images.large}}'></image>
+</view>
+<view class='content-wrapper'>
+  <view class='head-wrapper'>
+    <view class='head-info'>
+      <text class='title'>{{movieInfo.title}}</text>
+      <text class='date'>{{movieInfo.pubdate}}</text>
+      <text class='type'>{{movieInfo.tags[0]}} / {{movieInfo.tags[1]}}</text>
+      <text class='origin-name'>原名：{{movieInfo.original_title}}</text>
+      <text class='country'>国家：{{movieInfo.countries[0]}}</text>
+    </view>
+    <view class='head-rating'>
+      <text class='rating-aver'>{{rating.average}}</text>
+      <template is='rating' data="{{rating}}"></template>
+      <text class='rating-count'>{{movieInfo.comments_count}}人</text>
+    </view>
+  </view>
+  <view class='choose-wrapper'>
+    <view class='wanna'>
+      <text>想看</text>
+    </view>
+    <view class='already'>
+      <text>看过</text>
+    </view>
+  </view>
+  <view class='des-wrapper'>
+    <text class='des-title'>简介</text>
+    <text class='des-content'>{{movieInfo.summary}}</text>
+  </view>
+  <text class='actor-title'>影人</text>
+  <scroll-view class='actor-scroll' scroll-x>
+    <view class='actor-wrapper'>
+      <view class='actor-photo-wrapper'>
+        <view class='actor-grid' wx:for="{{movieInfo.directors}}" wx:key='item'>
+          <image src='{{item.avatars.medium}}'></image>
+          <text>{{item.name}}</text>
+        </view>
+        <view class='actor-grid' wx:for="{{movieInfo.casts}}" wx:key='item'>
+          <image src='{{item.avatars.medium}}'></image>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  
+</view>

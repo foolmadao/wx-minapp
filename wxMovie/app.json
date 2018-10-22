@@ -1,0 +1,19 @@
+{
+  "pages": [
+    
+    "pages/home/home",
+    "pages/search/search",
+    "pages/movieGrid/movieGrid",
+    "pages/movie-rating/movie-rating",
+    "pages/movie-more/movie-more",
+    "pages/movie-list/movie-list",
+    "pages/movie-detail/movie-detail"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00f",
+    "navigationBarTitleText": "今天看啥电影",
+    "navigationBarTextStyle": "#fff"
+  }
+}
